@@ -1,0 +1,2 @@
+https://stackoverflow.com/questions/49129272/show-image-in-flask
+https://stackoverflow.com/questions/24996518/what-size-to-specify-to-pil-image-frombytes

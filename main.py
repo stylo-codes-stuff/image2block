@@ -8,4 +8,4 @@ def index():
     return render_template("base.html",title="test")
 
 
-app.run(host='0.0.0.0', port=81)
+app.run(host='0.0.0.0', port=0)

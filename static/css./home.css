@@ -1,0 +1,17 @@
+body{
+background-color: #47b8f5;
+font-family:Candal;
+}
+@font-face{
+font-family: 'Candal';
+src: url('../fonts/Candal-Regular.ttf');
+}
+.title{
+  font-size:30px;
+  color:black;
+  text-align:center;
+  font-family:Candal;
+}
+form{
+  text-align:center;
+}

@@ -5,19 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image to Block</title>
+
 </head>
 <body>
 <center class="title"> IMAGE TO BLOCK</center>
-  <center><img src="{{url_for('static',filename='img/logo.png')}}"width=100></center>
+  <center><img action="result"src="{{url_for('static',filename='img/logo.png')}}"width=100></center>
   <form action="{{ url_for('upload_file') }}" enctype="multipart/form-data" method="POST">
     <input name="img" type="file"/>
     <input type="submit"/>
 </form>
  
-{% if img %}
-<h1>Rendered Image</h1>
-<img src="{{img}}">
-{% else %}
-<h1>Image will be render here...</h1>
-{% endif %}
+<center><h1>source image</h1>
+  <img src="" id="src_img" ></center>
+  <script>
+    data = "{{img}}"
+    data = data.replace("b&#39;", "") //to get rid of start curly brace code 
+    data = data.replace("&#39;", "")  //to get rid of end curly bracecode  
+    document.getElementById("src_img").src = "data:image/png;base64,"+data; // set src
+</script>
 </body>

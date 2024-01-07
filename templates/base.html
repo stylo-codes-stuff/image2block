@@ -9,8 +9,8 @@
 </head>
 <body>
 <center class="title"> IMAGE TO BLOCK</center>
-  <center><img action="result"src="{{url_for('static',filename='img/logo.png')}}"width=100></center>
-  <form action="{{ url_for('upload_file') }}" enctype="multipart/form-data" method="POST">
+  <center><img src="{{url_for('static',filename='img/logo.png')}}"width=100></center>
+  <form enctype="multipart/form-data" method="POST">
     <input name="img" type="file"/>
     <input type="submit"/>
 </form>

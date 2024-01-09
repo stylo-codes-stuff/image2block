@@ -4,11 +4,11 @@
     <link rel="stylesheet" href="{{url_for('static',filename='css/home.css')}}">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image to Block</title>
+    <title>Image 2 Block</title>
 
 </head>
 <body>
-<center class="title"> IMAGE TO BLOCK</center>
+<center class="title"> IMAGE 2 BLOCK</center>
   <center><img src="{{url_for('static',filename='img/logo.png')}}"width=100></center>
   <form enctype="multipart/form-data" method="POST">
     <input name="img" type="file"/>
@@ -19,8 +19,8 @@
   <img src="" id="src_img" ></center>
   <script>
     data = "{{img}}"
-    data = data.replace("b&#39;", "") //to get rid of start curly brace code 
-    data = data.replace("&#39;", "")  //to get rid of end curly bracecode  
-    document.getElementById("src_img").src = "data:image/png;base64,"+data; // set src
+    data = data.replace("b&#39;", "") 
+    data = data.replace("&#39;", "")  
+    document.getElementById("src_img").src = "data:image/png;base64," + data; 
 </script>
 </body>

@@ -33,4 +33,3 @@ def concrete_command(image,pref_width,pref_height):
         for row_index, row in enumerate(array):
             for pixel_index, pixel in enumerate(row):
                 f.write("fill" + f" ^{width-pixel_index} ^{height-row_index} ^ ^{width-pixel_index} ^{height-row_index} ^ {closest_color(pixel,concrete)}\n")
-def particle_command(image,pref_width,pref_height):
